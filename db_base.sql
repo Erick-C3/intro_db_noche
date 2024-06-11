@@ -1,0 +1,1 @@
+/* el conjunto de comandos para reiniciar la base de datos */
