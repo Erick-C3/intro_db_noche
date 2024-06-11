@@ -3,17 +3,10 @@
 
 /* ---------------------------------- CREATE -------------- */
 
-
-/* Muestra las base de datos existentes */
-SHOW DATABASES;
-
 /* Crea una base de datos */
 CREATE DATABASE primer_db;
 
 USE primer_db;
-
-/* ver las tablas */
-SHOW TABLES;
 
 /* Crear una tabla */
 CREATE TABLE productos(
@@ -22,7 +15,16 @@ CREATE TABLE productos(
     nombre VARCHAR(20)
 );
 
+/* ---------------------------------- FIN CREATE -------------- */
+/* ---------------------------------- READ -------------- */
+
+/* Muestra las base de datos existentes */
+SHOW DATABASES;
+
+/* ver las tablas */
+SHOW TABLES;
+
 /* ver los registros de una tabla */
 SELECT * FROM productos;
 
-/* ---------------------------------- FIN CREATE -------------- */
+/* ---------------------------------- FIN READ -------------- */
