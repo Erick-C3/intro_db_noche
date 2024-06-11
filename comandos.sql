@@ -15,6 +15,14 @@ CREATE TABLE productos(
     nombre VARCHAR(20)
 );
 
+INSERT INTO productos (precio, nombre) VALUES (500000.123, "notebook");
+INSERT INTO productos (precio, nombre) VALUES (0.230, "notebook ojala");
+
+INSERT INTO productos () VALUES ();
+INSERT INTO productos (nombre) VALUES ("algo");
+
+
+
 /* ---------------------------------- FIN CREATE -------------- */
 /* ---------------------------------- READ -------------- */
 
