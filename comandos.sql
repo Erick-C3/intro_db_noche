@@ -23,6 +23,7 @@ INSERT INTO productos (nombre) VALUES ("algo");
 
 
 
+
 /* ---------------------------------- FIN CREATE -------------- */
 /* ---------------------------------- READ -------------- */
 
@@ -36,3 +37,11 @@ SHOW TABLES;
 SELECT * FROM productos;
 
 /* ---------------------------------- FIN READ -------------- */
+
+/* ---------------------------------- UPDATE -------------- */
+
+ALTER TABLE productos ADD COLUMN tiene_oferta TINYINT(1) DEFAULT 0;
+ALTER TABLE productos ADD COLUMN peso FLOAT;
+ALTER TABLE productos ADD COLUMN tamanio FLOAT NOT NULL;
+
+/* ---------------------------------- FIN UPDATE -------------- */
