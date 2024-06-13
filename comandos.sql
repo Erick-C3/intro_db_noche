@@ -45,8 +45,6 @@ SELECT * FROM productos;
 ALTER TABLE productos
 ADD COLUMN tiene_oferta TINYINT(1) DEFAULT 0;
 
-
-
 ALTER TABLE productos ADD COLUMN peso FLOAT;
 ALTER TABLE productos ADD COLUMN tamanio FLOAT NOT NULL;
 
@@ -65,3 +63,14 @@ UPDATE productos
 SET unidad = "KG" WHERE id = 1;
 
 /* ---------------------------------- FIN UPDATE -------------- */
+
+/* ---------------------------------- DELETE -------------- */
+
+DELETE FROM productos WHERE id=3; 
+DELETE FROM productos WHERE id=2; 
+
+/* DELETE FROM productos;  FALTA EL WHERE, IMPORTANTE! */
+
+
+/* ---------------------------------- FIN DELETE -------------- */
+
