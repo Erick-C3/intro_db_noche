@@ -15,7 +15,9 @@ CREATE TABLE productos(
     nombre VARCHAR(20)
 );
 
-INSERT INTO productos (precio, nombre) VALUES (500000.123, "notebook");
+INSERT INTO productos (precio, nombre) 
+VALUES (500000.123, "notebook");
+
 INSERT INTO productos (precio, nombre) VALUES (0.230, "notebook ojala");
 
 INSERT INTO productos () VALUES ();
@@ -40,8 +42,26 @@ SELECT * FROM productos;
 
 /* ---------------------------------- UPDATE -------------- */
 
-ALTER TABLE productos ADD COLUMN tiene_oferta TINYINT(1) DEFAULT 0;
+ALTER TABLE productos
+ADD COLUMN tiene_oferta TINYINT(1) DEFAULT 0;
+
+
+
 ALTER TABLE productos ADD COLUMN peso FLOAT;
 ALTER TABLE productos ADD COLUMN tamanio FLOAT NOT NULL;
+
+ALTER TABLE productos ADD COLUMN unidad VARCHAR(3) NOT NULL;
+
+UPDATE productos
+SET peso = 2 WHERE id = 1;
+
+UPDATE productos
+SET peso = 2 WHERE id = 1;
+
+UPDATE productos
+SET peso = 4 WHERE id = 5;
+
+UPDATE productos
+SET unidad = "KG" WHERE id = 1;
 
 /* ---------------------------------- FIN UPDATE -------------- */
