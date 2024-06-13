@@ -23,6 +23,7 @@ INSERT INTO productos (precio, nombre) VALUES (0.230, "notebook ojala");
 INSERT INTO productos () VALUES ();
 INSERT INTO productos (nombre) VALUES ("algo");
 
+INSERT INTO productos (precio, nombre, tamanio, unidad) VALUES (0.230, "notebook ojala", 20, "L");
 
 
 
@@ -37,6 +38,9 @@ SHOW TABLES;
 
 /* ver los registros de una tabla */
 SELECT * FROM productos;
+
+/* Detalla los campos de la tabla */
+DESCRIBE productos;
 
 /* ---------------------------------- FIN READ -------------- */
 
